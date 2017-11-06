@@ -28,6 +28,7 @@ class SearchBar extends Component {
   render() {
     return (
       // If inpput is inside a form, pressing "enter" key will submit. This is free functionality. Do NOT need to setup onEnter event or onPressSubmitButton event.
+      // Only passint handleSubmit to onSubmit (not calling it now). So don't use (). ONLY use () when calling inline!
       <form onSubmit={this.handleSubmit} className="input-group">
         <input
           className="form-control"
